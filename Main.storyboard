@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lJD-Dd-UmU">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vacation View Controller-->
+        <scene sceneID="fN4-Kv-cb3">
+            <objects>
+                <viewController id="lJD-Dd-UmU" customClass="VacationViewController" customModule="FYP_Testing_Area" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gry-ie-iJa"/>
+                        <viewControllerLayoutGuide type="bottom" id="uc5-9m-pjO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mZE-ge-Ct9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mouse" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sg-4Y-8Lp">
+                                <rect key="frame" x="115" y="395" width="118" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Debug text" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F4x-4f-kYS">
+                                <rect key="frame" x="141" y="397.66666666666669" width="93" height="17"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="YeS-Kl-cg0"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z7k-qo-EUz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </arscnView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kkz-d6-FCn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xk6-BZ-7oj">
+                                <rect key="frame" x="140" y="741" width="95" height="30"/>
+                                <state key="normal" title="Opencv View "/>
+                                <connections>
+                                    <action selector="showOpenCVView" destination="lJD-Dd-UmU" eventType="touchUpInside" id="aOa-KT-L4F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xk6-BZ-7oj" firstAttribute="centerX" secondItem="mZE-ge-Ct9" secondAttribute="centerX" id="5Nw-dT-eee"/>
+                            <constraint firstItem="z7k-qo-EUz" firstAttribute="top" secondItem="mZE-ge-Ct9" secondAttribute="top" id="84w-9U-cJL"/>
+                            <constraint firstItem="z7k-qo-EUz" firstAttribute="leading" secondItem="mZE-ge-Ct9" secondAttribute="leading" id="8A2-ie-ejl"/>
+                            <constraint firstItem="uc5-9m-pjO" firstAttribute="top" secondItem="z7k-qo-EUz" secondAttribute="bottom" constant="-34" id="I62-Ad-8Qy"/>
+                            <constraint firstAttribute="trailing" secondItem="z7k-qo-EUz" secondAttribute="trailing" id="QFC-L2-73b"/>
+                            <constraint firstItem="Xk6-BZ-7oj" firstAttribute="centerY" secondItem="mZE-ge-Ct9" secondAttribute="centerY" constant="350" id="oEv-ey-5JD"/>
+                            <constraint firstItem="F4x-4f-kYS" firstAttribute="centerX" secondItem="mZE-ge-Ct9" secondAttribute="centerX" id="sok-Hg-Psq"/>
+                            <constraint firstItem="F4x-4f-kYS" firstAttribute="centerY" secondItem="mZE-ge-Ct9" secondAttribute="centerY" id="wHz-fQ-GNL"/>
+                            <constraint firstItem="Xk6-BZ-7oj" firstAttribute="leading" secondItem="Kkz-d6-FCn" secondAttribute="trailing" constant="-235" id="wmi-nA-Mm5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="debugTextView" destination="F4x-4f-kYS" id="vuO-oa-how"/>
+                        <outlet property="openCVView" destination="Kkz-d6-FCn" id="kEz-Sz-Aqa"/>
+                        <outlet property="sceneView" destination="z7k-qo-EUz" id="Ooh-r8-bkv"/>
+                        <outlet property="sudoMouseCursor" destination="2Sg-4Y-8Lp" id="X5Q-Bp-BGd"/>
+                        <outlet property="switchViewButton" destination="Xk6-BZ-7oj" id="8wM-vh-4DO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jgX-ge-wOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159.19999999999999" y="782.51231527093603"/>
+        </scene>
+    </scenes>
+</document>
